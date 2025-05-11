@@ -1,0 +1,77 @@
+
+.imgpat{
+  width: 150px;
+  height: 150px;
+  padding: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+ 
+  
+}
+
+.imgpat:hover {
+  transform: scale(1.1);
+}
+
+
+.text9{
+  font-size: 50px;
+  color: black;
+  font-weight: bolder;
+  text-shadow: 1px 2px 2px black;
+  margin-left: 550px;
+  padding: 50px;
+
+}
+
+
+.creators{
+  display: flex;
+  padding: 40px;
+  gap: 150px;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.mem1{
+  background-color:#cbdced;
+  width: 300px;
+  height: 400px;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  
+}
+.mem2{
+  background-color:#cbdced;
+  width: 300px;
+  height: 400px;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.mem3{
+  background-color:#cbdced;
+  width: 300px;
+  height: 400px;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+.mem1:hover {
+  transform: scale(1.1);
+}
+.mem2:hover {
+  transform: scale(1.1);
+}.mem3:hover {
+  transform: scale(1.1);
+}
+.creatorname{
+    text-align: center;
+   
+}

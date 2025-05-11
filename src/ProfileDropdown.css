@@ -1,0 +1,104 @@
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+}
+
+.user-icon:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  box-shadow: 0 8px 20px rgba(23, 20, 20, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1000;
+  animation: slideDown 0.3s ease-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-header {
+  background: #96a9d6;
+  background: linear-gradient(to right, #6c7380, #f74242);
+  color: white;
+  padding: 16px;
+  text-align: left;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.email {
+  font-size: 18px;
+  color: #e0e0e0;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding:14.5px 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, transform 0.2s ease;
+  border-bottom: 2px solid #eaeaea;
+  font-size: 16px;
+  
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+  font-weight: bolder;
+}
+
+.dropdown-menu li:hover {
+  background: #f7f7f7;
+  transform: translateX(3px);
+  color: #3ca0e7;
+  font-weight: 600;
+  transition: background 0.2s ease-in-out, color 0.2s ease;
+}
+
+.signout {
+  color: #e74c3c;
+  font-weight: 600;
+  transition: background 0.2s ease-in-out, color 0.2s ease;
+}
+
+.signout:hover {
+  background: #fcebea;
+  color: #c0392b;
+}

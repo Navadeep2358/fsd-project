@@ -1,0 +1,127 @@
+.profile-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .dropdown-wrapper {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .profile-email {
+    font-size: 0.9em;
+    color: gray;
+  }
+  
+  .divider {
+    margin: 10px 0;
+    border: none;
+    height: 1px;
+    background: lightgray;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  ul li:hover {
+    background: lightgray;
+    border-radius: 5px;
+  }
+  
+
+  /*------- womens drop down------*/
+
+.men-dropdown, 
+.women-dropdown {
+  position: absolute;
+  top: 60px;
+  left: 180px;
+  background-color: white;
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  border-radius: 8px;
+}
+
+.dropdown-column {
+  min-width: 180px;
+}
+
+.dropdown-column h4 {
+  margin-bottom: 8px;
+  color: #92c6d2;
+}
+
+.dropdown-column p {
+  margin: 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(31, 33, 29);
+}
+
+.dropdown-column p:hover {
+color: rgb(164, 164, 223);
+}
+
+
+
+.search-box {
+  position: absolute;
+  top: 10px;
+  right: 180px;
+  padding: 8px 12px;
+  width: 500px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+

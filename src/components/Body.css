@@ -1,0 +1,217 @@
+
+body {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  width: 100vw; /* Ensures full width */
+}
+.h1{
+  display:inline;
+  font-size: 45px;
+}
+
+.info{
+  display:contents;
+  margin-left: 20px;
+}
+
+.content{
+  margin-left: 40px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.dropping-texts {
+  display: inline-block;
+  width: 180px;
+  text-align: left;
+  height: 36px;
+  vertical-align: -2px;
+  font-size: 80px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+ 
+}
+
+.dropping-texts > div {
+  font-size:px;
+  opacity:0;
+  margin-left:-30px;
+  position:absolute;
+  font-weight:700; 
+  
+}
+
+.dropping-texts > div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+.dropping-texts > div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+.dropping-texts > div:nth-child(4) {
+  animation: roll2 5s linear infinite 3s;
+}
+
+
+@keyframes roll {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+    color: rgba(255, 0, 0, 0.837);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+    
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  20% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size:0px;
+    opacity:0.5;
+    margin-left:20px;
+    margin-top:100px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes roll2 {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(-25deg);
+    color:rgba(255, 0, 0, 0.837);
+  }
+  3% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  20% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size: 0px;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+  100% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(15deg);
+  }
+}
+
+
+
+.text2{
+  font-size: 40px;
+  color:#7096d1;
+  padding-left: 10px;
+}
+
+.explore{
+  width: 130px;
+  height: 50px ;
+  margin-bottom: 210px;
+  margin-left: 20px;
+  border-width: 2px;
+  border-radius: 15px;
+  color: white;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  border:none;
+  background-color: brown;
+
+}
+.explore:hover{
+  animation: colorChange  3s infinite;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  
+  }
+  
+  .carousel {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+   
+  }
+  
+  .viewport {
+    display: flex;
+    gap: 10px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    padding: 10px;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    list-style: none;
+  }
+  
+  .snapper {
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Stop auto-scroll on hover */
+  .carousel:hover .viewport {
+    animation-play-state: paused;
+  }
+  
+  
+  

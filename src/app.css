@@ -1,0 +1,302 @@
+
+/* Popup Overlay */
+#popup {
+  position:fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.65);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding-top: 120px;
+  padding-left: 500px;
+  
+}
+
+/* Popup Window */
+#popupwindow {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.4s ease-in-out;
+}
+
+/* Slide Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Popup Header */
+#popupheader {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1e1e1e;
+}
+
+/* Input Styles */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #5a67d8;
+}
+
+/* Button Styles */
+.signinbutton,
+#signup button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #5a67d8, #805ad5);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.signinbutton:hover,
+#signup button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #6b46c1, #4c51bf);
+}
+
+/* Link Section */
+.div2,
+#signup div {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #333;
+}
+
+.div2 label,
+#signup div span {
+  color: #5a67d8;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.forgotpassword {
+  text-align: right;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.forgotpassword label {
+  cursor: pointer;
+  color: #5a67d8;
+  font-weight: 500;
+}
+
+/* Error/Response Messages */
+#responseDiv {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  #popupwindow {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/*header--------------------------*/
+
+.header{
+  background-color:#B7B7A4;
+  width: 100%;
+  height: 80px; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  
+}
+
+.logo1{
+  width: 120px;
+  margin-top: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+  float: left;
+}
+
+.loginbutton{
+  width: 80px;
+  height: 40px ;
+  float: right;
+  margin-top: 15px;
+  margin-right: 50px;
+  border-width: 2px;
+  border-radius: 15px;
+  color: black;
+  background-color:white;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 15px;
+
+}
+.loginbutton:hover{
+  background-color:rgb(251, 182, 182);
+  border:none;
+  cursor: pointer;
+  transform: scale(1.1);
+ 
+}
+
+.wishlist{
+  width: 30px;
+  float: right;
+  padding: 20px;
+  cursor: pointer;
+ 
+  
+}
+
+.wishlist:hover{
+  transform: scale(1.1);
+ 
+}
+
+.registerbutton{
+  width: 80px;
+  height: 40px ;
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+  border-width: 2px;
+  border-radius: 15px;
+  color: black;
+  background-color:white;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+}
+.registerbutton:hover{
+  background-color: rgb(251, 182, 182);
+  border:none;
+  cursor: pointer;
+  transform: scale(1.1);
+ 
+}
+
+.searchicon{
+  width: 30px;
+  height: 30px;
+  float: right;
+  padding: 10px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.searchicon:hover{
+  transform: scale(1.1);
+}
+
+
+.selectionsection1,
+.selectionsection2,
+.selectionsection3,
+.selectionsection4
+  {
+  font-size: 18px;
+ padding-right: 20px;
+ display: inline-block;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 25px;
+ padding-left: 20px;
+ font-weight: bold;
+ color:black;
+ cursor: pointer;
+ transition: color 0.3s ease;
+   
+}
+
+.selectionsection1:hover,
+.selectionsection2:hover,
+.selectionsection3:hover,
+.selectionsection4:hover
+  {
+    color: red;
+  }
+
+  /*otp-------------------------*/
+
+  .otp-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+  }
+  
+  .otp-window {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .otp-window input {
+    font-size: 20px;
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+
+  .searchbar {
+  position: absolute;
+  top: 10px;
+  right: 350px;
+  padding: 8px 12px;
+  width: 500px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

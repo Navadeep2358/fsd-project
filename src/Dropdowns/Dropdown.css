@@ -1,0 +1,36 @@
+.men-dropdown,
+.women-dropdown {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  z-index: 10;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-column {
+  margin-right: 40px;
+  min-width: 180px;
+}
+
+.dropdown-column h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dropdown-column p {
+  margin: 5px 0;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.dropdown-column p:hover {
+  color: #ff4081;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
